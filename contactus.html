@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+     <!--
+         Portfolio Website
+         Filename: contactus.html
+         
+         Author: Olga Hamilton
+         Date:05/12/2025
+         Project 1
+      -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        nav { background-color: #355326; padding: 10px; }
+        nav a { color: white; margin: 10px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        header { padding: 40px; text-align: center; background-color: #f0f0f0; }
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 40px;
+            gap: 30px;
+        }
+        .contact-form {
+            flex: 1;
+            text-align: left;
+            button: center;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #355326;
+            color: white;
+            border: none;
+            cursor: pointer;
+           
+        }
+        .button-container {
+    text-align: center;
+}
+
+        .contact-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .contact-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #355326;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out by filling out the form below.</p>
+    </header>
+
+    <section>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Full Name" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <textarea rows="5" placeholder="Your Message" required></textarea><br>
+              
+      <div class="button-container">
+            <button type="submit">Send</button>
+     </div>
+
+            </form>
+        </div>
+        <div class="contact-image">
+            <img src="Photo/Olga.jpeg" height="300" width="300"alt="">
+            
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Olga Hamilton
+        <p>Author: Olga Hamilton<br>
+        <a href="mailto:olgakhamilton@gmail.com">olgakhamilton@gmail.com</a></p>
+        <p>Location: Ann Arbor</p>
+    </footer>
+</body>
+</html>
