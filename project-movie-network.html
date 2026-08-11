@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Actor Collaboration Network - Olga Hamilton</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <a class="brand" href="index.html">Olga Hamilton</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </nav>
+
+    <main class="case-detail movie-case">
+        <a class="back-link" href="project.html">← Back to Projects</a>
+
+        <section class="movie-hero">
+            <div class="movie-hero-copy">
+
+                <h1><span>Movie Actor</span> Collaboration Network.</h1>
+                <p class="case-lede">Exploring how actors are connected through shared film collaborations.</p>
+            </div>
+            <dl>
+                <div><dt>Role</dt><dd>Python Developer and Data Analyst</dd></div>
+                <div><dt>Course</dt><dd>SI 507 — Intermediate Programming</dd></div>
+                <div><dt>Timeline</dt><dd>January – April 2026</dd></div>
+                <div><dt>Team</dt><dd>Team of one</dd></div>
+                <div><dt>Tools</dt><dd>Python, pandas, NetworkX, Streamlit, pytest, TMDB data</dd></div>
+            </dl>
+        </section>
+
+        <section class="movie-network-showcase">
+            <div class="showcase-heading">
+                <p class="eyebrow">Interactive Application</p>
+
+                <p>Explore shared films and discover the shortest collaboration path between actors.</p>
+            </div>
+            <div class="movie-hero-visual">
+                <img src="Photo/movie-network-streamlit.png" alt="Streamlit app showing the shortest actor collaboration path">
+                <div class="network-mini" aria-label="Small actor network diagram">
+                    <span class="node node-a">Actor</span>
+                    <span class="node node-b">Film</span>
+                    <span class="node node-c">Actor</span>
+                    <span class="node node-d">Actor</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <p class="eyebrow">Project Overview</p>
+            <h2>Background</h2>
+            <p>Movies are created through large networks of actors who repeatedly collaborate across different productions. However, a standard movie table does not clearly show how individual actors are connected or how collaboration patterns extend across films.</p>
+            <p>This project uses graph analysis to make those relationships visible. In the network, each actor is represented as a node, and an edge connects two actors when they appeared in the same movie.</p>
+        </section>
+
+        <section class="portfolio-split">
+            <article>
+                <p class="eyebrow">Problem Statement</p>
+                <h2>Design Challenge</h2>
+                <p>Movie datasets commonly organize information by title, release date, popularity, and cast list. While this format is useful for looking up individual movies, it does not make it easy to explore relationships between actors.</p>
+                <p>How might I transform movie and cast data into an interactive network that helps users explore actor relationships, shared movies, collaboration paths, and influential performers?</p>
+            </article>
+            <article>
+                <p class="eyebrow">Project Goal</p>
+                <h2>What the app supports</h2>
+                <ul class="check-list">
+                    <li>Search for actors by name</li>
+                    <li>View an actor's movies and number of collaborators</li>
+                    <li>Find the shortest collaboration path between two actors</li>
+                    <li>Discover movies shared by two actors</li>
+                    <li>Rank actors by unique collaborators</li>
+                    <li>View a summary of the overall network</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="portfolio-section">
+            <p class="eyebrow">Dataset</p>
+            <h2>TMDB 5000 Movie Dataset</h2>
+            <p>The project uses two CSV files from the TMDB 5000 Movie Dataset: movie metadata and movie credits with cast information. The files include movie identifiers, titles, release dates, popularity values, vote averages, cast members, and crew information.</p>
+            <ul class="two-column-list">
+                <li>Loaded movie and credits CSV files with pandas</li>
+                <li>Joined datasets using the movie identifier</li>
+                <li>Parsed cast information stored as text-based lists</li>
+                <li>Extracted top-billed cast members for each movie</li>
+                <li>Created actor nodes and collaboration edges</li>
+                <li>Used the first eight cast members by default to keep the graph meaningful and manageable</li>
+            </ul>
+        </section>
+
+        <section class="portfolio-section">
+            <p class="eyebrow">Network Structure</p>
+            <h2>How the graph works</h2>
+            <div class="metric-grid">
+                <article><span>Movies processed</span><strong>4,800</strong></article>
+                <article><span>Actors</span><strong>15,196</strong></article>
+                <article><span>Collaboration edges</span><strong>121,510</strong></article>
+                <article><span>Connected components</span><strong>201</strong></article>
+            </div>
+            <div class="portfolio-split compact-split">
+                <article>
+                    <h3>Nodes</h3>
+                    <p>Each node represents an actor.</p>
+                </article>
+                <article>
+                    <h3>Edges</h3>
+                    <p>An edge connects two actors who appeared in the same movie. Each edge stores shared movie titles and a weight representing how many movies the actors made together.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <p class="eyebrow">My Role</p>
+            <h2>Independent design and development</h2>
+            <ul class="two-column-list">
+                <li>Defining the network model</li>
+                <li>Cleaning and merging movie data</li>
+                <li>Designing the object-oriented architecture</li>
+                <li>Building graph-search functions</li>
+                <li>Developing the Streamlit interface</li>
+                <li>Writing automated tests</li>
+                <li>Handling missing and invalid data</li>
+                <li>Creating user-friendly interaction options</li>
+            </ul>
+        </section>
+
+        <section class="portfolio-section">
+            <p class="eyebrow">Process</p>
+            <h2>How I transformed movie metadata into an interactive actor network.</h2>
+            <div class="process-timeline">
+                <article><span>01</span><div><h3>Define the problem</h3><p>I identified actor collaboration as a relationship that could be better understood through a graph rather than a traditional table.</p></div></article>
+                <article><span>02</span><div><h3>Prepare the data</h3><p>I loaded and merged the TMDB movie and credit files, parsed cast records, removed duplicate actor names within each film, and handled empty or invalid values.</p></div></article>
+                <article><span>03</span><div><h3>Model the network</h3><p>I represented actors as nodes and their shared movie appearances as weighted edges.</p></div></article>
+                <article><span>04</span><div><h3>Build the algorithms</h3><p>I created functions for actor search, shared-movie lookup, rankings, actor details, network summaries, and shortest-path analysis.</p></div></article>
+                <article><span>05</span><div><h3>Design the interface</h3><p>I transformed the command-line functionality into a Streamlit application with sidebar navigation and separate views for each feature.</p></div></article>
+                <article><span>06</span><div><h3>Test the system</h3><p>I wrote automated tests to verify graph construction, search, actor details, path finding, rankings, invalid input handling, CSV loading, and network summaries.</p></div></article>
+                <article><span>07</span><div><h3>Final delivery</h3><p>I completed the Python network model, Streamlit application, test suite, and project documentation.</p></div></article>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <p class="eyebrow">Object-Oriented Design</p>
+            <h2>Core system structure</h2>
+            <div class="oo-layout">
+                <article>
+                    <h3>Movie</h3>
+                    <p>Stores movie ID, title, release date, vote average, popularity, and cast members. The class also derives the release year from the release date.</p>
+                </article>
+                <article>
+                    <h3>Actor</h3>
+                    <p>Stores actor name, movie titles, unique collaborators, movie count, and collaborator count.</p>
+                </article>
+                <article>
+                    <h3>MovieActorNetwork</h3>
+                    <p>Manages the NetworkX graph, actor and movie objects, data loading, search, rankings, shared movies, collaboration paths, and network statistics.</p>
+                </article>
+            </div>
+            <div class="flow-diagram" aria-label="Movie network system flow">
+                <span>Movie data + Credits data</span>
+                <span>Data preparation</span>
+                <span>MovieActorNetwork class</span>
+                <span>Actor objects + Movie objects</span>
+                <span>NetworkX graph</span>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <p class="eyebrow">Core Application Features</p>
+            <h2>What users can explore</h2>
+            <div class="feature-card-grid">
+                <article>
+                    <h3>Search actors</h3>
+                    <p>Users can enter part of an actor's name and receive matching results. Search normalizes capitalization and extra spacing.</p>
+                </article>
+                <article>
+                    <h3>Actor details</h3>
+                    <p>Users can view an actor's movie count, unique collaborator count, film titles, and collaborator names.</p>
+                </article>
+                <article>
+                    <h3>Shortest collaboration path</h3>
+                    <p>NetworkX determines how two actors are indirectly connected through other performers and shared films.</p>
+                </article>
+                <article>
+                    <h3>Most connected actors</h3>
+                    <p>The program ranks actors by the number of unique performers with whom they collaborated.</p>
+                </article>
+                <article>
+                    <h3>Shared movies</h3>
+                    <p>Users can enter two actors and identify the movies in which they appeared together.</p>
+                </article>
+                <article>
+                    <h3>Network summary</h3>
+                    <p>The application reports total actors, collaboration edges, movies, and connected components.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <p class="eyebrow">Most Connected Actors</p>
+            <h2>Leading collaboration counts</h2>
+            <div class="ranking-list">
+                <div><span>Robert De Niro</span><strong>329</strong></div>
+                <div><span>Samuel L. Jackson</span><strong>313</strong></div>
+                <div><span>Morgan Freeman</span><strong>266</strong></div>
+                <div><span>Bruce Willis</span><strong>261</strong></div>
+                <div><span>Nicolas Cage</span><strong>245</strong></div>
+            </div>
+            <p>A careful interpretation is that high connectivity may reflect a combination of career longevity, number of films, ensemble casts, and the dataset's coverage, not necessarily artistic influence by itself.</p>
+        </section>
+
+        <section class="portfolio-split">
+            <article>
+                <p class="eyebrow">Testing</p>
+                <h2>System validation</h2>
+                <p>I wrote automated tests to verify graph construction, search, actor details, path finding, rankings, invalid input handling, CSV loading, and network summaries.</p>
+            </article>
+            <article>
+                <p class="eyebrow">Reflection</p>
+                <h2>What I learned</h2>
+                <p>This project helped me connect programming fundamentals with analytical thinking by turning relationship data into a useful exploration tool.</p>
+            </article>
+        </section>
+
+        <section class="portfolio-section">
+            <p class="eyebrow">Behind the Project</p>
+            <h2>Explore the build</h2>
+            <p>Curious how the network comes together? Visit the GitHub repository to explore the source code, data workflow, automated tests, and documentation behind the interactive experience.</p>
+            <div class="project-links">
+                <a href="https://github.com/holga24" target="_blank" rel="noopener">
+                    <img class="github-button-icon no-lightbox" src="github.svg" alt="" aria-hidden="true">
+                    <span>Explore on GitHub →</span>
+                </a>
+            </div>
+        </section>
+
+        <a class="next-project" href="project-skillbridge.html">
+            <span class="next-project-copy"><small>Next Project →</small><strong>SkillBridge</strong></span>
+            <img src="Photo/skillbridge-mobile-mockups.png" alt="SkillBridge mobile application screens">
+        </a>
+    </main>
+
+    <footer><span>&copy; 2026 Olga Hamilton</span></footer>
+    <script src="lightbox.js"></script>
+    <script src="footer-links.js" defer></script>
+</body>
+</html>

@@ -1,51 +1,83 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio - Home</title>
-     <!--
+    <title>Olga Hamilton - Portfolio</title>
+    <!--
          Portfolio Website
          Filename: index.html
-         
+
          Author: Olga Hamilton
-         Date:05/012/2025
+         Date: 07/01/2026
          Project 1
       -->
-    <style>
- 
-        body { text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        nav { background-color: #355326; padding: 10px; }
-        nav a { color: white; margin: 10px; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        header { padding: 40px; text-align: center; background-color: #f0f0f0; }
-        footer { text-align: center; padding: 10px; background-color: #355326; color: white; }
-    </style>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css?v=41">
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About</a>
-        <a href="project.html">Projects</a>
-        <a href="contactus.html">Contact</a>
+<body class="home-page">
+    <nav class="site-nav">
+        <a class="brand" href="index.html">Olga Hamilton</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="blog.html">Blog</a>
+        </div>
     </nav>
-    
-    <header>
-        <h1>Welcome to My Student Portfolio</h1>
-        <p>This is the homepage of my personal website.</p>
-   
-         <img src="Photo/CODING.jpeg" height="300" width="600" alt="">
-  
+
+    <header class="hero">
+        <div class="hero-text">
+            <p class="eyebrow">Information & Data Analytics • Portfolio</p>
+            <h1><span>Data Analyst,</span><span>User-Centered Designer.</span></h1>
+            <p>I am a graduate student at the University of Michigan, interested in data, technology, AI, and ethical decision-making. This portfolio shares the projects, skills, and writing that shape my work.</p>
+            <div class="button-row">
+                <a class="button" href="project.html">View Projects</a>
+                <a class="button resume-button" href="resume.html">
+                    <span>View My Resume</span>
+                    <span class="resume-button-arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+        <img src="Photo/olga-hero-green.png" alt="Olga Hamilton">
     </header>
 
+    <main>
+        <section class="what-i-do" aria-labelledby="what-i-do-title">
+            <header class="what-i-do-heading">
+                <p>What I Do</p>
+                <h2 id="what-i-do-title">Analyze the problem.<br>Design the solution.<br>Communicate the impact.</h2>
+                <p>I combine data, design, and communication to turn information into useful, human-centered solutions.</p>
+            </header>
+
+            <div class="what-i-do-grid">
+                <article>
+                    <div class="what-card-title"><span>01</span><p>Analyze</p><h3>Data Analysis &amp; Insights</h3></div>
+                    <p>I use data to identify patterns, compare outcomes, visualize findings, and support data-driven decisions.</p>
+                    <div class="what-card-skills"><p>Skills</p><span>Python</span><span>SQL</span><span>Excel</span><span>Data Visualization</span><span>Network Analysis</span><span>Dashboards</span></div>
+                    <a class="what-card-link" href="bachelor-science-information.html">Explore Data Projects →</a>
+                </article>
+
+                <article>
+                    <div class="what-card-title"><span>02</span><p>Design</p><h3>User-Centered Design</h3></div>
+                    <p>I use research and design thinking to understand people's needs and create practical, accessible digital experiences.</p>
+                    <div class="what-card-skills"><p>Skills</p><span>UX Research</span><span>Figma</span><span>Prototyping</span><span>User Interviews</span><span>Design Thinking</span><span>HTML/CSS</span></div>
+                    <a class="what-card-link" href="study-abroad-barcelona.html">Explore Design Projects →</a>
+                </article>
+
+                <article>
+                    <div class="what-card-title"><span>03</span><p>Communicate</p><h3>Data Storytelling &amp; Communication</h3></div>
+                    <p>I translate technical information and research findings into clear stories, visuals, and recommendations people can understand and act on.</p>
+                    <div class="what-card-skills"><p>Skills</p><span>Data Storytelling</span><span>Presentations</span><span>Technical Writing</span><span>Visual Communication</span><span>Stakeholder Communication</span></div>
+                    <a class="what-card-link" href="project.html">Explore Communication Work →</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
     <footer>
-    <a href="https://www.linkedin.com/in/www.linkedin.com/in/olga-hamilton-oh" target="_blank" rel="noopener">
-    <img src="Photo/In.png" alt="LinkedIn Profile" style="width: 30px; height: 30px;">
-</a>
-
-
-        &copy; 2025 by Olga Hamilton
+        <span>&copy; 2026 Olga Hamilton</span>
     </footer>
+    <script src="footer-links.js" defer></script>
 </body>
 </html>

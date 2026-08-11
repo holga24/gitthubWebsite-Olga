@@ -3,52 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-     <!--
-         Portfolio Website
-         Filename: project.html
-         
-         Author: Olga Hamilton
-         Date:05/12/2025
-         Project 1
-      -->
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        nav { background-color: #355326; padding: 10px; }
-        nav a { color: white; margin: 10px; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        header { padding: 40px; text-align: center; background-color: #f0f0f0; }
-        section { padding: 20px; }
-        footer { text-align: center; padding: 10px; background-color: #355326; color: white; }
-    </style>
+    <title>Projects | Olga Hamilton</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css?v=47">
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About</a>
-        <a href="project.html">Projects</a>
-        <a href="contactus.html">Contact</a>
+<body class="project-pathways-page">
+    <nav class="site-nav">
+        <a class="brand" href="index.html">Olga Hamilton</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="project.html" aria-current="page">Projects</a>
+            <a href="blog.html">Blog</a>
+        </div>
     </nav>
 
-    <header>
-        <h1>My Projects</h1>
-        <p>Here are some of the projects I've worked on as a student.</p>
+    <header class="pathways-hero">
+        <p>Selected work</p>
+        <h1>Projects in data,<br>design, and technology.</h1>
+        <p>Explore my complete collection of analytics, research, product design, machine learning, and user-centered design projects.</p>
     </header>
 
-    <section>
-        <h2>Weather & Air Quality Analysis</h2>
-        <p>Used real-time APIs to explore the connection between weather conditions and air quality in Detroit city.</p>
+    <main class="case-study-list all-project-cards">
+        <header class="all-projects-heading">
+            <p>All projects</p>
+            <h2>Explore the work</h2>
+        </header>
 
-        <h2>Portfolio Website</h2>
-        <p>Built this personal portfolio using HTML and CSS to showcase my skills and projects.</p>
-        <h2>Design thinking/Study abroad-Barcelona</h2>
-        <p>During my study abroad, I worked on a Design Thinking project about young people's reading habits. 
-        We created an app that shares one chapter a week and includes reading stats, profiles, and friend recommendations.</p>
-    
-    </section>
+        <article class="case-card">
+            <img class="poster-image" src="Photo/UMSI EXPO .jpg" alt="Ann Arbor Hands-On Museum dashboard project poster">
+            <div class="case-card-content"><p class="case-meta">01 · Client Data Dashboards</p><h2>Ann Arbor Hands-On Museum Data Dashboards</h2><p>Designed interactive dashboards that helped museum staff explore attendance, membership, and donor trends.</p><div class="case-tags"><span>SQL</span><span>Apache Superset</span><span>Data Visualization</span></div><a class="view-case" href="project-museum-dashboards.html">View Project</a></div>
+        </article>
 
-    <footer>
-        &copy; 2025 Olga Hamilton
-    </footer>
+        <article class="case-card">
+            <img src="Photo/movie-network-streamlit.png" alt="Movie Actor Collaboration Network application">
+            <div class="case-card-content"><p class="case-meta">02 · Network Analysis</p><h2>Movie Actor Collaboration Network</h2><p>Built a Python graph application to explore actor connections, centrality, and collaboration paths.</p><div class="case-tags"><span>Python</span><span>Streamlit</span><span>Network Analysis</span></div><a class="view-case" href="project-movie-network.html">View Project</a></div>
+        </article>
+
+        <article class="case-card">
+            <img class="skillbridge-card-image" src="Photo/skillbridge-mobile-mockups.png" alt="SkillBridge mobile application screens">
+            <div class="case-card-content"><p class="case-meta">03 · Product &amp; Project Planning</p><h2>SkillBridge</h2><p>Planned a platform connecting students with career-aligned volunteer opportunities and motivated employers.</p><div class="case-tags"><span>Product Strategy</span><span>Figma</span><span>Mobile App</span></div><a class="view-case" href="project-skillbridge.html">View Project</a></div>
+        </article>
+
+        <article class="case-card">
+            <img class="poster-image" src="Photo/coffee-project-cover.png" alt="Global Coffee Health Dataset presentation cover">
+            <div class="case-card-content"><p class="case-meta">04 · Data Exploration &amp; Machine Learning</p><h2>Global Coffee Health Dataset</h2><p>Used statistical testing and machine learning to investigate whether daily coffee consumption predicts stress.</p><div class="case-tags"><span>Python</span><span>XGBoost</span><span>Statistical Analysis</span></div><a class="view-case" href="project-coffee-health.html">View Project</a></div>
+        </article>
+
+        <article class="case-card">
+            <img class="skillbridge-card-image" src="Photo/campus-connect-four-screens.png" alt="Campus Connect mobile application screens">
+            <div class="case-card-content"><p class="case-meta">05 · UX Design &amp; Online Communities</p><h2>Campus Connect</h2><p>Designed a student-focused platform for discovering events, finding support, and building meaningful campus connections.</p><div class="case-tags"><span>UX Design</span><span>Figma</span><span>User Research</span></div><a class="view-case" href="project-campus-connect.html">View Project</a></div>
+        </article>
+
+        <article class="case-card">
+            <img src="Photo/Netconnect.jpg" alt="Professional connections represented across a digital network">
+            <div class="case-card-content"><p class="case-meta">06 · Generative AI &amp; Networking</p><h2>GenAI LinkedIn Networking Assistant</h2><p>Analyzed 133 connections, recommended relevant contacts, and supported personalized professional outreach.</p><div class="case-tags"><span>Generative AI</span><span>Data Analysis</span><span>Automation</span></div><a class="view-case" href="project-genai-linkedin.html">View Project</a></div>
+        </article>
+
+        <article class="case-card bookclub-list-card">
+            <div class="bookclub-card-visual">
+                <img src="Photo/bookclub-reading-group.png" alt="Four people reading and working together around a table">
+            </div>
+            <div class="case-card-content"><p class="case-meta">07 · UX Research · Product Design</p><h2>BookClub</h2><p>A mobile reading experience that helps university students build consistent habits, discover books, track progress, and connect with friends.</p><div class="case-tags"><span>UX Research</span><span>Figma</span><span>Mobile App</span><span>Design Thinking</span></div><a class="view-case" href="project-bookclub.html">View Project</a></div>
+        </article>
+
+        <article class="case-card face2face-list-card">
+            <div class="face2face-card-visual" aria-label="Face2Face project artwork">
+                <strong>Face2<br>Face</strong>
+                <i aria-hidden="true"></i>
+                <i aria-hidden="true"></i>
+            </div>
+            <div class="case-card-content"><p class="case-meta">08 · Design Thinking Project</p><h2>Face2Face</h2><p>A mobile app that helps young adults strengthen in-person communication by matching them through interests and encouraging real-world activities.</p><div class="case-tags"><span>UX Research</span><span>Figma</span><span>Mobile App</span><span>Design Thinking</span></div><a class="view-case" href="project-face2face.html">View Project</a></div>
+        </article>
+    </main>
+
+    <footer><span>&copy; 2026 Olga Hamilton</span></footer>
+    <script src="footer-links.js" defer></script>
 </body>
 </html>

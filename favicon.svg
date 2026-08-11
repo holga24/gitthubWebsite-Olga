@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
+  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #123f56;
+        font-family: Georgia-Bold, Georgia;
+        font-size: 46.8px;
+        font-weight: 700;
+        isolation: isolate;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: #355326;
+        stroke-width: 6px;
+      }
+
+      .st2 {
+        fill: #f5f7f3;
+      }
+    </style>
+  </defs>
+  <rect class="st2" width="64" height="64"/>
+  <rect class="st1" x="5" y="5" width="54" height="54" rx="14" ry="14"/>
+  <text class="st0" transform="translate(9.5 47.6) scale(.5 1)"><tspan x="0" y="0">OH</tspan></text>
+</svg>

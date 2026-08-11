@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI LinkedIn Networking Assistant | Olga Hamilton</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css?v=44">
+</head>
+<body class="genai-case-page">
+    <nav class="site-nav">
+        <a class="brand" href="index.html">Olga Hamilton</a>
+        <div class="nav-links"><a href="index.html">Home</a><a href="aboutus.html">About</a><a href="project.html">Projects</a><a href="blog.html">Blog</a></div>
+    </nav>
+
+    <main>
+        <header class="genai-hero">
+            <a class="genai-back" href="self-directed-internship.html">← Self-Directed Internship</a>
+            <div class="genai-hero-grid">
+                <div class="genai-hero-copy">
+                    <p class="genai-label">Generative AI · Networking · Automation</p>
+                    <h1>GenAI LinkedIn<br>Networking Assistant</h1>
+                    <p>Turning LinkedIn connections into meaningful professional conversations.</p>
+                    <div class="genai-project-meta"><span><strong>Project Type</strong>Self-Directed Internship</span><span><strong>Role</strong>GenAI Workflow Designer · Data Analyst · UX Researcher</span></div>
+                </div>
+                <figure class="genai-hero-image"><img src="Photo/Netconnect.jpg" alt="Professional networking connections represented across a digital network"><figcaption>AI recommends. The user decides.</figcaption></figure>
+            </div>
+            <div class="genai-result-strip" aria-label="Initial project results">
+                <div><strong>133</strong><span>Connections</span></div><b aria-hidden="true">→</b>
+                <div><strong>5</strong><span>AI recommendations</span></div><b aria-hidden="true">→</b>
+                <div><strong>4</strong><span>Responses</span></div>
+                <div class="genai-rate"><strong>80%</strong><span>Initial response rate</span></div>
+            </div>
+        </header>
+
+        <section class="genai-overview genai-section">
+            <div><p class="genai-label">Project overview</p><h2>Connections do not automatically become conversations.</h2></div>
+            <div><p>Professional networks can grow quickly, but having hundreds of LinkedIn connections does not necessarily lead to meaningful relationships.</p><p>I explored how Generative AI could organize connection data, identify relevant people, find time to connect, and help draft personalized outreach.</p><p class="genai-flow-line">LinkedIn Data → AI Recommendations → Calendar Planning → Personalized Outreach → Real Conversations</p></div>
+        </section>
+
+        <section class="genai-question">
+            <p class="genai-label">Design question</p>
+            <h2>How might Generative AI help people turn existing LinkedIn connections into meaningful professional conversations?</h2>
+        </section>
+
+        <section class="genai-section genai-problem">
+            <div><p class="genai-label">The goal</p><h2>Organize → Match → Schedule → Connect</h2><p>The assistant supports decisions while keeping the user in control of who is contacted and when.</p></div>
+            <div><p class="genai-label">The challenge</p><ul><li>Remember who is in the network</li><li>Understand what each person does</li><li>Identify contacts relevant to career goals</li><li>Find time to meet</li><li>Write personalized messages</li><li>Follow up consistently</li></ul></div>
+        </section>
+
+        <section class="genai-data genai-section">
+            <div><p class="genai-label">The data</p><h2>Preparing 133 connections for analysis.</h2></div>
+            <div><p>The LinkedIn export contained inconsistent formatting, repeated labels, names, titles, and dates. I used Python-assisted parsing to transform it into a reusable CSV organized by name, professional title, and connection date.</p><div class="genai-discoveries"><article><span>01</span><h3>Unstructured data</h3><p>The first challenge was not AI recommendation—it was preparing reliable data.</p></article><article><span>02</span><h3>Missing contact information</h3><p>Because direct outreach could not be automated, the workflow drafts LinkedIn messages for user review and manual sending.</p></article></div></div>
+        </section>
+
+        <section class="genai-workflow">
+            <header><p class="genai-label">The solution</p><h2>A human-in-the-loop GenAI networking workflow.</h2></header>
+            <ol>
+                <li><span>01</span><div><strong>Ingest</strong><p>Import LinkedIn connections.</p></div></li>
+                <li><span>02</span><div><strong>Structure</strong><p>Clean and organize the data.</p></div></li>
+                <li><span>03</span><div><strong>Match</strong><p>Identify contacts aligned with a networking goal.</p></div></li>
+                <li><span>04</span><div><strong>Schedule</strong><p>Find potential 30-minute meeting times.</p></div></li>
+                <li><span>05</span><div><strong>Activate</strong><p>Draft personalized outreach for review.</p></div></li>
+            </ol>
+        </section>
+
+        <section class="genai-how genai-section">
+            <div><p class="genai-label">How it works</p><h2>From a networking goal to personalized outreach.</h2></div>
+            <div class="genai-how-list">
+                <article><span>01</span><div><h3>Structure the network</h3><p>Transform raw LinkedIn data into a clean CSV containing 133 connections.</p></div></article>
+                <article><span>02</span><div><h3>Define a goal</h3><p>The initial test focused on tech and engineering professionals in software, data, and security.</p></div></article>
+                <article><span>03</span><div><h3>Recommend connections</h3><p>The assistant selected five relevant contacts from the full network.</p></div></article>
+                <article><span>04</span><div><h3>Find time to connect</h3><p>Calendar availability suggests possible meeting times, but any calendar action requires confirmation.</p></div></article>
+                <article><span>05</span><div><h3>Generate outreach</h3><p>Each editable message combines the contact's role, the reason for connecting, and a proposed time.</p></div></article>
+            </div>
+        </section>
+
+        <section class="genai-testing">
+            <div><p class="genai-label">Real-world testing</p><h2>Four of five recommended contacts responded.</h2><p>I sent personalized messages to the five connections recommended by the workflow. Four responded, producing an early 80% response rate.</p><p class="genai-caution">This was an initial test with a small sample—not proof that the system will consistently achieve an 80% response rate.</p></div>
+            <div class="genai-metrics-table" role="table" aria-label="Initial test metrics">
+                <div role="row"><span role="cell">Connections analyzed</span><strong role="cell">133</strong></div>
+                <div role="row"><span role="cell">AI recommendations</span><strong role="cell">5</strong></div>
+                <div role="row"><span role="cell">Outreach messages</span><strong role="cell">5</strong></div>
+                <div role="row"><span role="cell">Responses</span><strong role="cell">4</strong></div>
+                <div role="row"><span role="cell">Response rate</span><strong role="cell">80%</strong></div>
+                <div role="row"><span role="cell">Meetings completed</span><strong role="cell">Testing in progress</strong></div>
+            </div>
+        </section>
+
+        <section class="genai-principles genai-section">
+            <header><p class="genai-label">Design principles</p><h2>Useful AI with meaningful user control.</h2></header>
+            <div><article><span>01</span><h3>Human-in-the-loop</h3><p>AI supports decisions but does not send messages or make consequential choices without confirmation.</p></article><article><span>02</span><h3>Narrow &amp; sequential</h3><p>The workflow handles one task at a time: Parse → Match → Schedule → Draft → Send.</p></article><article><span>03</span><h3>Reversible</h3><p>Calendar events can be modified without restarting the recommendation process.</p></article><article><span>04</span><h3>Personalized</h3><p>Recommendations and messages respond to a specific networking goal.</p></article></div>
+        </section>
+
+        <section class="genai-section genai-lessons">
+            <div><p class="genai-label">Lessons learned</p><h2>The workflow around AI matters as much as the output.</h2></div>
+            <div><article><h3>Data quality matters.</h3><p>Reliable recommendations begin with clean, structured information.</p></article><article><h3>Asking is better than assuming.</h3><p>Clarifying the networking goal produced more focused recommendations.</p></article><article><h3>Constraints can improve design.</h3><p>Stopping at message drafting preserved user control.</p></article><article><h3>AI needs real-world evaluation.</h3><p>Actual outreach began measuring usefulness through responses and conversations.</p></article></div>
+        </section>
+
+        <section class="genai-section genai-future">
+            <div><p class="genai-label">Future improvements</p><h2>What I am testing next.</h2></div>
+            <ul><li><strong>Semantic matching</strong>Use embeddings or semantic similarity beyond job-title keywords.</li><li><strong>Networking history</strong>Track contacts, responses, meetings, and follow-ups.</li><li><strong>Response tracking</strong>Compare recommendation and message performance.</li><li><strong>Recurring recommendations</strong>Suggest a small set of connections each week.</li><li><strong>Follow-up assistance</strong>Support appropriate messages after conversations.</li></ul>
+        </section>
+
+        <section class="genai-reflection">
+            <p class="genai-label">Reflection</p>
+            <blockquote>Building with Generative AI is not only about generating content. It requires the right data, clear constraints, user control, and evidence that the workflow produces meaningful outcomes.</blockquote>
+            <p>The first test moved this project beyond a prototype: four of five AI-recommended connections responded, creating an initial signal to investigate through additional testing.</p>
+        </section>
+
+        <section class="genai-tags" aria-label="Project tags"><span>Generative AI</span><span>Data Analysis</span><span>Python</span><span>Human-in-the-Loop AI</span><span>Workflow Design</span><span>Google Calendar</span><span>LinkedIn Networking</span><span>AI Evaluation</span></section>
+    </main>
+
+    <footer><span>&copy; 2026 Olga Hamilton</span></footer>
+    <script src="footer-links.js" defer></script>
+</body>
+</html>

@@ -3,48 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Olga Hamilton</title>
     <!--
          Portfolio Website
          Filename: aboutus.html
-         
+
          Author: Olga Hamilton
-         Date:05/012/2025
+         Date: 07/01/2026
          Project 1
       -->
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        nav { background-color: #355326; padding: 10px; }
-        nav a { color: white; margin: 10px; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        .about-container { display: flex; align-items: center; padding: 40px; background-color: #f0f0f0; }
-        .about-container img { max-width: 200px; margin-right: 30px; border-radius: 10px; }
-        .about-text { max-width: 600px; }
-        footer { text-align: center; padding: 10px; background-color: #355326; color: white; }
-    </style>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css?v=43">
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About</a>
-        <a href="project.html">Projects</a>
-        <a href="contactus.html">Contact</a>
+<body class="about-page">
+    <nav class="site-nav">
+        <a class="brand" href="index.html">Olga Hamilton</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="blog.html">Blog</a>
+        </div>
     </nav>
 
-    <section class="about-container">
-        
-        <img src="Photo/Olga.jpeg" height="300" width="300" alt="">
-        <div class="about-text">
-            <h1>About Me</h1>
-            <p>Hello! I am currently pursuing a Bachelor of Science in Information at 
-            the University of Michigan, specializing in the Information Analysis pathway. 
-            With a strong foundation in data analysis and a passion for interpreting data, 
-            I am particularly interested in the intersection of technology, data, and ethical decision-making.</p>
+
+    <main class="about-intro">
+        <figure class="about-intro-photo"><img src="Photo/Olgapink-sage.png" alt="Olga Hamilton"></figure>
+        <div class="about-intro-copy">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1>Olga K. Hamilton</h1>
+            <p class="about-intro-title">Data Analytics · User-Centered Design</p>
+            <p>I'm a graduate student at the University of Michigan School of Information with an interest in using <strong>data, design, and ethical decision-making</strong> to solve real-world problems.</p>
+            <p>I enjoy exploring data to uncover insights, understanding people's needs through user-centered design, and communicating complex information in ways that are clear and useful.</p>
+            <p>My experiences across data analytics, design, AI, and community-focused projects have shaped how I approach my work: <strong>analyze the problem, design with people in mind, and communicate the impact.</strong></p>
+            <a class="about-resume-link" href="resume.html">View My Resume →</a>
         </div>
+    </main>
+
+    <section class="pathways-grid about-pathways" aria-label="Project pathways">
+        <a class="pathway-card" href="master-science-information.html">
+            <div class="pathway-card-image">
+                <img src="Photo/U-M pic.jpeg" alt="University of Michigan campus">
+                <span>04</span>
+            </div>
+            <div>
+                <p>Graduate · Coming soon</p>
+                <h2>Master of Science in Information</h2>
+                <span>Explore the next chapter →</span>
+            </div>
+        </a>
+
+        <a class="pathway-card" href="self-directed-internship.html">
+            <div class="pathway-card-image">
+                <img src="Photo/CODING.jpeg" alt="Computer workspace for independent projects">
+                <span>03</span>
+            </div>
+            <div>
+                <p>Independent practice</p>
+                <h2>Self-Directed Internship</h2>
+                <span>Explore independent projects →</span>
+            </div>
+        </a>
+
+        <a class="pathway-card" href="study-abroad-barcelona.html">
+            <div class="pathway-card-image">
+                <img src="Photo/Barcelona.jpeg" alt="Park Güell overlooking Barcelona">
+                <span>02</span>
+            </div>
+            <div>
+                <p>International experience</p>
+                <h2>Study Abroad - Barcelona</h2>
+                <span>Explore Barcelona projects →</span>
+            </div>
+        </a>
+
+        <a class="pathway-card" href="bachelor-science-information.html">
+            <div class="pathway-card-image">
+                <img src="Photo/umsi_leinweber.jpg" alt="University of Michigan School of Information Leinweber building">
+                <span>01</span>
+            </div>
+            <div>
+                <p>Undergraduate</p>
+                <h2>Bachelor of Science in Information</h2>
+                <span>Explore BSI projects →</span>
+            </div>
+        </a>
+    </section>
+
+    <section class="beyond-section">
+        <header class="beyond-heading">
+            <p>Life beyond the screen</p>
+            <h2>Beyond<br>Technology</h2>
+            <p>When I'm not working with data, design, or technology, I enjoy spending time on creative and relaxing activities that keep me inspired and enjoying free time with family and friends.</p>
+        </header>
+
+        <div class="beyond-story-list">
+            <article><img src="Photo/beyond-garden-lavender.jpeg" alt="Fresh lavender gathered from the garden"><div><span>🌱</span><p class="beyond-number">01 · Gardening</p><h3>Watching ideas grow.</h3><p>I love growing flowers and plants. Gardening teaches me patience, creativity, and the joy of watching things grow. Lavender is one of my favorite plants!</p></div></article>
+            <article><img src="Photo/beyond-crochet.jpeg" alt="A handmade striped crochet blanket"><div><span>🧶</span><p class="beyond-number">02 · Sewing &amp; Crochet</p><h3>Making something meaningful.</h3><p>Creating handmade projects is one of my favorite ways to relax. I enjoy turning ideas into something useful and meaningful. This blanquete was a fun project to work on 20 minutes everyday at 2024.</p></div></article>
+            <article><img src="Photo/beyond-travel-disney-edited.png" alt="Olga visiting Disneyland Paris"><div><span>✈️</span><p class="beyond-number">03 · Traveling</p><h3>Finding new perspectives.</h3><p>I enjoy exploring new places, experiencing different cultures, and learning from the people I meet. Every trip gives me new perspectives and inspiration. Visiting Disneyland with my family at Paris 2025.</p></div></article>
+            <article><img src="Photo/Food.jpeg" alt="Food picture"><div><span>🍳</span><p class="beyond-number">04 · Cooking</p><h3>Sharing food and joy.</h3><p>I enjoy trying new recipes and sharing food with family, friends, and community. Fruits and vegetables are my favorites!</p></div></article>
+            <article><img src="Photo/beyond-travel-barcelona.jpeg" alt="A peaceful moment exploring Park Güell in Barcelona"><div><span>🧘 🎵</span><p class="beyond-number">05 · Yoga & Music</p><h3>Creating room to reset.</h3><p>Yoga helps me slow down, reset, and stay balanced, while music brings joy and inspiration. Picture at Park Güell/Barcelona 2025.</p></div></article>
+            <article><img src="Photo/Book.jpeg" alt="Books ready for reading"><div><span>📚</span><p class="beyond-number">06 · Reading</p><h3>Staying curious.</h3><p>Reading keeps me curious and gives me new ideas, stories, and perspectives. These are what I am exploring this summer.</p></div></article>
+        </div>
+
+        <blockquote class="beyond-quote">“You can't use up creativity. The more you use, the more you have.”<cite>— Maya Angelou</cite></blockquote>
     </section>
 
     <footer>
-        &copy; 2025 Olga Hamilton
+        <span>&copy; 2026 Olga Hamilton</span>
     </footer>
+    <script src="footer-links.js" defer></script>
 </body>
 </html>
