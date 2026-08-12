@@ -6428,7 +6428,7 @@ footer a {
 
 .genai-result-strip div {
     display: grid;
-    gap: 7px;
+    gap: 21px;
     text-align: center;
 }
 
@@ -6592,7 +6592,12 @@ footer a {
 }
 
 .genai-workflow li {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
     min-height: 230px;
+    column-gap: 12px;
+    align-content: start;
+    align-items: baseline;
     padding: 24px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 18px;
@@ -6600,21 +6605,24 @@ footer a {
 
 .genai-workflow li > span {
     color: #b9d7af;
-    font-size: 0.7rem;
+    font-size: 1.25rem;
     font-weight: 900;
+    line-height: 1;
 }
 
 .genai-workflow li div {
-    margin-top: 70px;
+    margin-top: 0;
 }
 
 .genai-workflow strong {
+    display: block;
     font-size: 1.25rem;
+    line-height: 1;
     text-transform: uppercase;
 }
 
 .genai-workflow li p {
-    margin-bottom: 0;
+    margin: 12px 0 0;
     color: #d7e7ea;
     line-height: 1.55;
 }
@@ -6837,7 +6845,7 @@ footer a {
     }
 
     .genai-workflow li div {
-        margin-top: 35px;
+        margin-top: 0;
     }
 
     .genai-metrics-table > div {
