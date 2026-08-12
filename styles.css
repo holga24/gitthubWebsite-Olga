@@ -6592,38 +6592,41 @@ footer a {
 }
 
 .genai-workflow li {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    min-height: 230px;
-    column-gap: 12px;
-    align-content: start;
-    align-items: baseline;
-    padding: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    min-height: 360px;
+    padding: clamp(26px, 2.5vw, 40px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
     border-radius: 18px;
+    background: transparent;
 }
 
-.genai-workflow li > span {
-    color: #b9d7af;
+.genai-workflow-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.genai-workflow-title > span {
+    color: var(--genai-green);
     font-size: 1.25rem;
     font-weight: 900;
     line-height: 1;
 }
 
-.genai-workflow li div {
-    margin-top: 0;
-}
-
 .genai-workflow strong {
-    display: block;
+    display: inline;
     font-size: 1.25rem;
+    color: #fff;
     line-height: 1;
     text-transform: uppercase;
 }
 
 .genai-workflow li p {
-    margin: 12px 0 0;
+    margin: 24px 0 0;
     color: #d7e7ea;
+    font-size: 1rem;
     line-height: 1.55;
 }
 
