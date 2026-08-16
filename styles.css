@@ -6566,6 +6566,100 @@ footer a {
     font-size: 0.95rem;
 }
 
+.genai-flow-diagram {
+    padding: clamp(75px, 9vw, 125px) 7%;
+    background: var(--genai-mint);
+}
+
+.genai-flow-diagram header {
+    max-width: 900px;
+    margin-bottom: clamp(38px, 5vw, 68px);
+}
+
+.genai-flow-diagram h2 {
+    margin: 0;
+    color: var(--genai-navy);
+    font-size: clamp(2.4rem, 4.7vw, 5.2rem);
+    letter-spacing: -0.055em;
+    line-height: 0.98;
+}
+
+.genai-flow-diagram ol {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: clamp(24px, 3vw, 52px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.genai-flow-diagram li {
+    position: relative;
+    display: flex;
+    min-height: 170px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+    padding: 22px;
+    border: 1px solid rgba(18, 63, 86, 0.24);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 12px 28px rgba(18, 63, 86, 0.08);
+}
+
+.genai-flow-diagram li:not(:last-child)::after {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + clamp(5px, 0.8vw, 15px));
+    color: var(--genai-green);
+    content: "→";
+    font-size: clamp(1.15rem, 2vw, 1.8rem);
+    font-weight: 900;
+    transform: translate(-50%, -50%);
+}
+
+.genai-flow-diagram li > span {
+    color: var(--genai-green);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.genai-flow-diagram li > strong {
+    color: var(--genai-navy);
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    line-height: 1.2;
+}
+
+@media (max-width: 1050px) {
+    .genai-flow-diagram ol {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .genai-flow-diagram li:nth-child(3)::after {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .genai-flow-diagram ol {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .genai-flow-diagram li {
+        min-height: 130px;
+    }
+
+    .genai-flow-diagram li:not(:last-child)::after,
+    .genai-flow-diagram li:nth-child(3)::after {
+        top: calc(100% + 18px);
+        left: 50%;
+        display: block;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+}
+
 .genai-workflow {
     padding: clamp(85px, 10vw, 150px) 7%;
     background: var(--genai-navy);
