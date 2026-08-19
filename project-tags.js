@@ -14,8 +14,9 @@
         let visibleCount = 0;
 
         cards.forEach((card) => {
-            const cardTags = [...card.querySelectorAll(".case-tags button[data-tag]")]
-                .map((button) => normalize(button.dataset.tag));
+            const cardTags = (card.dataset.tags || "")
+                .split("|")
+                .map(normalize);
             const matches = !normalizedTag || cardTags.includes(normalizedTag);
             card.hidden = !matches;
             if (matches) visibleCount += 1;
