@@ -1665,8 +1665,7 @@ button {
 .coffee-data-flow strong { color: #7b4024; font-size: clamp(2.8rem,6vw,6rem); line-height: 1; }
 .coffee-data-flow span { color: #705a4b; font-weight: 700; }
 .coffee-data-flow i { color: #d88955; font-size: 2rem; font-style: normal; }
-.coffee-data-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; margin-bottom: 28px; }
-.coffee-data-tags span { padding: 9px 14px; border-radius: 99px; background: #e8d8c8; color: #573829; font-weight: 700; }
+.coffee-data-tags { margin: 0 0 28px; color: #573829; font-weight: 800; letter-spacing: .025em; }
 .coffee-dataset > p:last-child { max-width: 780px; margin: auto; }
 .coffee-card-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 17px; }
 .coffee-card-grid article { min-height: 210px; padding: 27px; border: 1px solid #d8c7b7; border-radius: 14px; background: #fffaf2; }
