@@ -712,8 +712,8 @@ button {
 .pathways-hero {
     padding: clamp(70px, 9vw, 130px) 7%;
     background:
-        linear-gradient(90deg, rgba(18, 63, 86, 0.72) 0%, rgba(18, 63, 86, 0.55) 58%, rgba(18, 63, 86, 0.32) 100%),
-        url("Photo/Project.jpg") center / cover no-repeat;
+        linear-gradient(90deg, rgba(18, 63, 86, 0.88) 0%, rgba(18, 63, 86, 0.7) 58%, rgba(18, 63, 86, 0.48) 100%),
+        url("Photo/Project.jpeg") center / cover no-repeat;
     color: var(--white);
 }
 
@@ -1176,7 +1176,10 @@ button {
 }
 
 .internship-page-hero {
-    background: var(--deep-blue);
+    min-height: 680px;
+    background:
+        linear-gradient(90deg, rgba(9, 39, 53, 0.92) 0%, rgba(9, 39, 53, 0.78) 52%, rgba(9, 39, 53, 0.52) 100%),
+        url("Photo/Datahtml.jpeg") center / cover no-repeat;
 }
 
 .degree-project-list {
@@ -1204,6 +1207,27 @@ button {
     height: 100%;
     min-height: 390px;
     object-fit: cover;
+}
+
+.pathway-project-card .pathway-project-full-image {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 3 / 2;
+    align-self: center;
+    object-fit: contain;
+    background: #eef3ec;
+}
+
+.website-project-card > div {
+    padding: clamp(28px, 3.5vw, 48px);
+}
+
+.website-project-card h2 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+.website-project-card > div > p:not(:first-child) {
+    line-height: 1.55;
 }
 
 .pathway-project-card > div {
