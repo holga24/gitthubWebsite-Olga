@@ -4889,6 +4889,73 @@ footer a {
     }
 }
 
+.blog-professional-project {
+    display: grid;
+    grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.1fr);
+    gap: clamp(40px, 7vw, 110px);
+    align-items: center;
+    padding: clamp(70px, 9vw, 130px) 7%;
+    background: #f9e5eb;
+}
+
+.blog-professional-project > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: 18px;
+    box-shadow: 0 20px 48px rgba(18, 63, 86, 0.12);
+    object-fit: cover;
+}
+
+.blog-professional-project-copy > p:first-child {
+    margin: 0 0 22px;
+    color: #a94f6b;
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.blog-professional-project-copy h2 {
+    max-width: 850px;
+    margin: 0 0 28px;
+    color: #743247;
+    font-family: Georgia, serif;
+    font-size: clamp(2.7rem, 5.5vw, 6.4rem);
+    font-weight: 400;
+    letter-spacing: -0.055em;
+    line-height: 0.98;
+}
+
+.blog-professional-project-copy > p:last-of-type {
+    margin: 0 0 34px;
+    color: #4f433d;
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+    line-height: 1.7;
+}
+
+.blog-professional-project-copy > a {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #a94f6b;
+    color: #a94f6b;
+    font-size: 1.05rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.blog-professional-project-copy > a:hover,
+.blog-professional-project-copy > a:focus-visible {
+    color: #743247;
+    border-bottom-color: #743247;
+}
+
+@media (max-width: 820px) {
+    .blog-professional-project {
+        grid-template-columns: 1fr;
+    }
+}
+
 .blog-story-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -5257,6 +5324,22 @@ footer a {
     color: #49346f;
 }
 
+.professional-project-article {
+    --article-color: #a94f6b;
+    --article-soft: #f9e5eb;
+}
+
+.professional-project-article .blog-article-next a {
+    background: #efc5d1;
+    color: #743247;
+}
+
+.professional-project-article .blog-article-hero > img {
+    height: auto;
+    aspect-ratio: 2580 / 1268;
+    object-fit: contain;
+}
+
 .community-article {
     --article-color: #754a40;
     --article-soft: #f8e6e1;
@@ -5419,6 +5502,93 @@ footer a {
     line-height: 1.2;
 }
 
+.blog-article-body .professional-project-overview,
+.blog-article-body .professional-project-work {
+    display: grid;
+}
+
+.professional-project-details,
+.professional-project-content {
+    grid-column: 2;
+}
+
+.professional-project-details dl {
+    display: grid;
+    gap: 0;
+    margin: 0 0 30px;
+}
+
+.professional-project-details dl div {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--article-color), transparent 75%);
+}
+
+.professional-project-details dt {
+    color: var(--article-color);
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.professional-project-details dd {
+    margin: 0;
+    font-weight: 700;
+}
+
+.professional-project-link {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: var(--article-color);
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.professional-project-content h2 {
+    margin-bottom: 28px;
+}
+
+.professional-project-content ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 34px;
+    margin: 0;
+    padding-left: 22px;
+    line-height: 1.55;
+}
+
+.professional-project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    justify-content: center;
+    margin-top: -45px;
+    text-align: center;
+}
+
+.professional-project-skills span {
+    display: inline-flex;
+    gap: 14px;
+    align-items: center;
+    padding: 0;
+    border: 0;
+    color: var(--article-color);
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.professional-project-skills span:not(:last-child)::after {
+    content: "·";
+    color: color-mix(in srgb, var(--article-color), transparent 35%);
+}
+
 .blog-article-body .learning-certificate-list p {
     margin: 0;
     color: #394a46;
@@ -5429,6 +5599,15 @@ footer a {
 @media (max-width: 820px) {
     .learning-certificates-content {
         grid-column: 1;
+    }
+
+    .professional-project-details,
+    .professional-project-content {
+        grid-column: 1;
+    }
+
+    .professional-project-content ul {
+        grid-template-columns: 1fr;
     }
 }
 
