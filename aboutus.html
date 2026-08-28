@@ -28,7 +28,14 @@
 
 
     <main class="about-intro">
-        <figure class="about-intro-photo"><img src="Photo/Olgapink-sage.png" alt="Olga Hamilton"></figure>
+        <figure class="about-intro-photo">
+            <button class="about-photo-flip" type="button" aria-label="Portrait of Olga Hamilton. Activate to show the peace lily photograph.">
+                <span class="about-photo-flip-inner">
+                    <span class="about-photo-face about-photo-front"><img src="Photo/Olgapink-sage.png" alt="Portrait of Olga Hamilton"></span>
+                    <span class="about-photo-face about-photo-back"><img src="Photo/Peace lily.jpg" alt="White peace lily surrounded by green leaves"></span>
+                </span>
+            </button>
+        </figure>
         <div class="about-intro-copy">
             <p class="eyebrow">Hello, I'm</p>
             <h1>Olga K. Hamilton</h1>
@@ -116,6 +123,7 @@
     <footer>
         <span>&copy; 2026 Olga Hamilton</span>
     </footer>
+    <script src="about-photo-flip.js" defer></script>
     <script src="footer-links.js?v=2" defer></script>
 </body>
 </html>
