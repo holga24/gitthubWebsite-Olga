@@ -1666,6 +1666,13 @@ button {
     background: #fff;
 }
 
+.case-card img.website-card-image {
+    aspect-ratio: 2580 / 1268;
+    object-fit: contain;
+    object-position: center;
+    background: #f8f1ed;
+}
+
 .skillbridge-case { overflow: hidden; background: #f7f4e9; color: #173a35; }
 .skillbridge-case > .back-link { margin: 28px 7%; color: #173a35; }
 .sb-hero { padding: clamp(50px, 8vw, 110px) 7% 70px; background: #173a35; color: #f7f4e9; }
@@ -5722,28 +5729,49 @@ footer a {
 .professional-project-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 14px;
+    gap: 12px 14px;
     justify-content: center;
     margin-top: -45px;
     text-align: center;
 }
 
-.professional-project-skills span {
+.professional-project-skills a {
     display: inline-flex;
-    gap: 14px;
+    min-height: 46px;
+    gap: 9px;
     align-items: center;
-    padding: 0;
-    border: 0;
+    justify-content: center;
+    padding: 10px 18px;
+    border: 2px solid var(--article-color);
+    border-radius: 999px;
     color: var(--article-color);
-    font-size: 0.75rem;
+    font-size: clamp(0.76rem, 1vw, 0.9rem);
     font-weight: 900;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    text-decoration: none;
     text-transform: uppercase;
+    transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
 
-.professional-project-skills span:not(:last-child)::after {
-    content: "·";
-    color: color-mix(in srgb, var(--article-color), transparent 35%);
+.professional-project-skills a::before {
+    width: 8px;
+    height: 8px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: #d39b29;
+    content: "";
+}
+
+.professional-project-skills a:nth-child(even)::before {
+    background: #78a997;
+}
+
+.professional-project-skills a:hover,
+.professional-project-skills a:focus-visible {
+    background: var(--article-color);
+    color: #fff;
+    transform: translateY(-2px);
 }
 
 .blog-article-body .learning-certificate-list p {
