@@ -1055,8 +1055,11 @@ button {
 .pw-features p { color: #d7e2e0; line-height: 1.7; }
 .pw-reflection { padding: clamp(75px,10vw,145px) 7%; background: #dcebd5; text-align: center; }
 .pw-reflection blockquote { max-width: 1150px; margin: 35px auto 60px; color: var(--pw-blue); font-family: Georgia,serif; font-size: clamp(2.2rem,4.5vw,4.8rem); line-height: 1.1; }
-.pw-skills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-.pw-skills span { padding: 9px 13px; border: 1px solid var(--pw-green); border-radius: 999px; color: var(--pw-green); font-size: .72rem; font-weight: 900; text-transform: uppercase; }
+.pw-skills { display: flex; flex-wrap: wrap; gap: 12px 14px; justify-content: center; }
+.pw-skills a { display: inline-flex; min-height: 46px; gap: 9px; align-items: center; justify-content: center; padding: 10px 18px; border: 2px solid var(--pw-green); border-radius: 999px; color: var(--pw-green); font-size: clamp(.76rem,1vw,.9rem); font-weight: 900; letter-spacing: .02em; line-height: 1; text-align: center; text-decoration: none; text-transform: uppercase; transition: background-color .18s ease,transform .18s ease; }
+.pw-skills a::before { width: 8px; height: 8px; flex: 0 0 auto; border-radius: 50%; background: #d39b29; content: ""; }
+.pw-skills a:nth-child(even)::before { background: #78a997; }
+.pw-skills a:hover,.pw-skills a:focus-visible { background: rgba(53,83,38,.1); transform: translateY(-2px); }
 .pw-next { display: grid; grid-template-columns: 1fr minmax(280px,360px); align-items: center; min-height: 240px; background: #fff; color: var(--pw-blue); text-decoration: none; }
 .pw-next span { display: grid; gap: 12px; justify-items: end; padding: 36px clamp(38px,6vw,78px); text-align: right; }
 .pw-next small { color: var(--pw-green); font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
