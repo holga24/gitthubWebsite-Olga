@@ -19,6 +19,11 @@
             src: "Photo/Lemon.jpg",
             alt: "Bright yellow lemons, including one sliced lemon",
             label: "lemon photograph"
+        },
+        {
+            src: "Photo/Book.jpeg",
+            alt: "A stack of books about design, data analysis, discovery, business, wellness, and love",
+            label: "book-stack photograph"
         }
     ];
     let currentIndex = 0;
