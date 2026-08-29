@@ -21,9 +21,9 @@
             label: "lemon photograph"
         },
         {
-            src: "Photo/Book.jpeg",
-            alt: "A stack of books about design, data analysis, discovery, business, wellness, and love",
-            label: "book-stack photograph"
+            src: "Photo/tintin.jpeg",
+            alt: "A Tintin Adventures book displayed with decorative pins",
+            label: "Tintin book photograph"
         }
     ];
     let currentIndex = 0;

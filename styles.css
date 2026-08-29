@@ -735,7 +735,7 @@ button {
     padding: clamp(70px, 9vw, 130px) 7%;
     background:
         linear-gradient(90deg, rgba(18, 63, 86, 0.88) 0%, rgba(18, 63, 86, 0.7) 58%, rgba(18, 63, 86, 0.48) 100%),
-        url("Photo/Project.jpeg") center / cover no-repeat;
+        url("Photo/Projectnote.jpeg") center / cover no-repeat;
     color: var(--white);
 }
 
