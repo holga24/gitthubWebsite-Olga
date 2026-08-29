@@ -10,7 +10,7 @@
                     <a class="global-footer-mark" href="index.html" aria-label="Olga Hamilton home">OH</a>
                     <h3>Olga Hamilton</h3>
                     <p>Ann Arbor, Michigan</p>
-                    <a class="global-footer-contact" href="contactus.html">Contact</a>
+                    <a class="global-footer-contact" href="contactus.html" target="_blank" rel="noopener">Contact</a>
                 </div>
                 <nav class="global-footer-links" aria-label="Footer navigation">
                     <h4>Navigation</h4>
